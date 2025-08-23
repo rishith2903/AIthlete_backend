@@ -513,3 +513,5 @@ To run Phase 1 tests:
 Model saving conventions:
 - Save artifacts in `models/` with semantic versions in filenames.
 - Update `version_log.json` with {name, version, path, date, notes} entries when exporting new artifacts.
+#   A I t h l e t e _ A I M o d e l s  
+ 

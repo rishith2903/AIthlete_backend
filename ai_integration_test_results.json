@@ -1,0 +1,9 @@
+[
+  {
+    "endpoint": "/pose/analyze",
+    "test_input": {
+      "image_data": "ZmFrZV9pbWFnZV9kYXRh",
+      "exercise_type": "squat"
+    },
+    "expected_response": {
+      "form_quality": 

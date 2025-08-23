@@ -1,0 +1,32 @@
+{
+  "models": [
+    {
+      "name": "workout_recommender",
+      "version": "0.1.0",
+      "path": "models/workout_recommender_v0.1.0.json",
+      "date": "2025-08-23",
+      "notes": "Prototype artifact created by training stub"
+    },
+    {
+      "name": "nutrition_planner",
+      "version": "0.1.0",
+      "path": "models/nutrition_planner_v0.1.0.json",
+      "date": "2025-08-23",
+      "notes": "Prototype artifact created by training stub"
+    },
+    {
+      "name": "fitness_chatbot",
+      "version": "0.1.0",
+      "path": "models/fitness_chatbot_v0.1.0.json",
+      "date": "2025-08-23",
+      "notes": "Prototype artifact created by training stub"
+    },
+    {
+      "name": "pose_estimator",
+      "version": "0.1.0",
+      "path": "models/pose_estimator_v0.1.0.json",
+      "date": "2025-08-23",
+      "notes": "Prototype artifact created by training stub"
+    }
+  ]
+}

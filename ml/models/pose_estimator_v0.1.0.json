@@ -1,0 +1,5 @@
+{
+  "name": "pose_estimator",
+  "version": "0.1.0",
+  "notes": "Placeholder for MoveNet/MediaPipe-style model"
+}

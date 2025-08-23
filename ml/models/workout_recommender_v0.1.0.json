@@ -1,0 +1,8 @@
+{
+  "name": "workout_recommender",
+  "version": "0.1.0",
+  "artifacts": {
+    "tfidf": "c:\\Users\\rishi\\Documents\\gymproject\\Backend\\ml\\models\\workout_recommender_v0.1.0_tfidf.pkl",
+    "svd": "c:\\Users\\rishi\\Documents\\gymproject\\Backend\\ml\\models\\workout_recommender_v0.1.0_svd.pkl"
+  }
+}

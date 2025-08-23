@@ -1,0 +1,5 @@
+{
+  "name": "fitness_chatbot",
+  "version": "0.1.0",
+  "notes": "Placeholder: fine-tune DistilBERT/GPT-2-small on fitness dialogs"
+}

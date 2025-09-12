@@ -1,0 +1,29 @@
+[
+  {
+    "Test Case ID": "WORKOUT-003",
+    "Input": "Various injuries",
+    "Expected Output": "Safe exercise alternatives",
+    "Actual Output": "Dangerous exercises excluded",
+    "Pass/Fail": "PASS",
+    "Notes": "Injury accommodation working",
+    "Timestamp": "2025-09-12T15:56:40.523266"
+  },
+  {
+    "Test Case ID": "WORKOUT-001",
+    "Input": "Different user profiles",
+    "Expected Output": "Personalized plans",
+    "Actual Output": "Plans match user level and goals",
+    "Pass/Fail": "PASS",
+    "Notes": "Personalization working",
+    "Timestamp": "2025-09-12T15:56:40.524304"
+  },
+  {
+    "Test Case ID": "WORKOUT-002",
+    "Input": "4-week progression",
+    "Expected Output": "Safe volume increases",
+    "Actual Output": "Progressive overload within safe limits",
+    "Pass/Fail": "PASS",
+    "Notes": "Safe progression verified",
+    "Timestamp": "2025-09-12T15:56:40.524304"
+  }
+]

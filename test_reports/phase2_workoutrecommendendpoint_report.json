@@ -1,0 +1,22 @@
+[
+  {
+    "Endpoint": "/api/workouts/recommend",
+    "Input": "{'user_id': 'test_user_001', 'fitness_level': 'intermediate', 'goals': ['muscle_gain', 'strength'], ",
+    "Expected Response": "Personalized workout plan",
+    "Actual Response": "{'status': 'success', 'workout_plan': {'exercises': [{'name': 'Squats', 'sets': 3, 'reps': 12, 'rest",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 100.54159164428711,
+    "Notes": "Personalized plan generated",
+    "Timestamp": "2025-09-12T15:59:08.476198"
+  },
+  {
+    "Endpoint": "/api/workouts/recommend",
+    "Input": "{'user_id': 'test_user_002', 'fitness_level': 'beginner', 'goals': ['weight_loss'], 'injuries': ['kn",
+    "Expected Response": "Injury-safe workout",
+    "Actual Response": "{'status': 'success', 'workout_plan': {'exercises': [{'name': 'Squats', 'sets': 3, 'reps': 12, 'rest",
+    "Pass/Fail": "FAIL",
+    "Latency (ms)": 101.13930702209473,
+    "Notes": "Unsafe exercises included",
+    "Timestamp": "2025-09-12T15:59:08.577337"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "Test Case ID": "NUTRITION-001",
+    "Input": "Multiple allergy profiles",
+    "Expected Output": "Allergen-free meals",
+    "Actual Output": "All meals safe for allergies",
+    "Pass/Fail": "PASS",
+    "Notes": "Allergy safety verified",
+    "Timestamp": "2025-09-12T15:56:40.525266"
+  },
+  {
+    "Test Case ID": "NUTRITION-003",
+    "Input": "Various user profiles",
+    "Expected Output": "Appropriate calorie targets",
+    "Actual Output": "Calories calculated correctly",
+    "Pass/Fail": "PASS",
+    "Notes": "Calorie calculation working",
+    "Timestamp": "2025-09-12T15:56:40.525266"
+  },
+  {
+    "Test Case ID": "NUTRITION-002",
+    "Input": "Different diet types",
+    "Expected Output": "Correct macro ratios",
+    "Actual Output": "All diets properly balanced",
+    "Pass/Fail": "PASS",
+    "Notes": "Macro balance verified",
+    "Timestamp": "2025-09-12T15:56:40.526295"
+  }
+]

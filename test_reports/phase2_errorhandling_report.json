@@ -1,0 +1,52 @@
+[
+  {
+    "Endpoint": "/api/pose/check",
+    "Input": "Malformed JSON",
+    "Expected Response": "Error handling",
+    "Actual Response": "'NoneType' object has no attribute 'get'",
+    "Pass/Fail": "FAIL",
+    "Latency (ms)": 0,
+    "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+    "Timestamp": "2025-09-12T15:59:09.084954"
+  },
+  {
+    "Endpoint": "/api/workouts/recommend",
+    "Input": "Malformed JSON",
+    "Expected Response": "Error handling",
+    "Actual Response": "'NoneType' object has no attribute 'get'",
+    "Pass/Fail": "FAIL",
+    "Latency (ms)": 0,
+    "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+    "Timestamp": "2025-09-12T15:59:09.084954"
+  },
+  {
+    "Endpoint": "/api/nutrition/plan",
+    "Input": "Malformed JSON",
+    "Expected Response": "Error handling",
+    "Actual Response": "'NoneType' object has no attribute 'get'",
+    "Pass/Fail": "FAIL",
+    "Latency (ms)": 0,
+    "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+    "Timestamp": "2025-09-12T15:59:09.084954"
+  },
+  {
+    "Endpoint": "/api/chatbot/message",
+    "Input": "Malformed JSON",
+    "Expected Response": "Error handling",
+    "Actual Response": "'NoneType' object has no attribute 'get'",
+    "Pass/Fail": "FAIL",
+    "Latency (ms)": 0,
+    "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+    "Timestamp": "2025-09-12T15:59:09.084954"
+  },
+  {
+    "Endpoint": "/api/pose/check",
+    "Input": "Service unavailable",
+    "Expected Response": "Graceful degradation",
+    "Actual Response": "Service unavailability handled",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 0,
+    "Notes": "Service failure handled",
+    "Timestamp": "2025-09-12T15:59:09.086303"
+  }
+]

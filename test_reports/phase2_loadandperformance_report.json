@@ -1,0 +1,52 @@
+[
+  {
+    "Endpoint": "/api/workouts/recommend",
+    "Input": "10 concurrent requests",
+    "Expected Response": "All requests handled",
+    "Actual Response": "Avg time: 10.86ms",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 10.855889320373535,
+    "Notes": "Handled 10 concurrent requests",
+    "Timestamp": "2025-09-12T15:59:09.195720"
+  },
+  {
+    "Endpoint": "/api/pose/check",
+    "Input": "SLA: 500ms",
+    "Expected Response": "Response within 500ms",
+    "Actual Response": "Actual: 100.64ms",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 100.64387321472168,
+    "Notes": "SLA met",
+    "Timestamp": "2025-09-12T15:59:09.297372"
+  },
+  {
+    "Endpoint": "/api/workouts/recommend",
+    "Input": "SLA: 300ms",
+    "Expected Response": "Response within 300ms",
+    "Actual Response": "Actual: 100.61ms",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 100.61287879943848,
+    "Notes": "SLA met",
+    "Timestamp": "2025-09-12T15:59:09.397985"
+  },
+  {
+    "Endpoint": "/api/nutrition/plan",
+    "Input": "SLA: 300ms",
+    "Expected Response": "Response within 300ms",
+    "Actual Response": "Actual: 100.56ms",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 100.55994987487793,
+    "Notes": "SLA met",
+    "Timestamp": "2025-09-12T15:59:09.498545"
+  },
+  {
+    "Endpoint": "/api/chatbot/message",
+    "Input": "SLA: 200ms",
+    "Expected Response": "Response within 200ms",
+    "Actual Response": "Actual: 100.51ms",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 100.50725936889648,
+    "Notes": "SLA met",
+    "Timestamp": "2025-09-12T15:59:09.599052"
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "phase": "Phase 1 - AI Models Testing",
+  "timestamp": "2025-09-12T15:56:40.543833",
+  "summary": {
+    "total_tests": 13,
+    "passed": 11,
+    "failed": 2,
+    "success_rate": "84.62%"
+  },
+  "detailed_results": [
+    {
+      "Test Case ID": "POSE-002",
+      "Input": "Various exercises with angles",
+      "Expected Output": "Correct form feedback",
+      "Actual Output": "All feedback messages correct",
+      "Pass/Fail": "PASS",
+      "Notes": "Form analysis accurate",
+      "Timestamp": "2025-09-12T15:56:40.522267"
+    },
+    {
+      "Test Case ID": "POSE-003",
+      "Input": "Risky pose patterns",
+      "Expected Output": "Correct risk assessment",
+      "Actual Output": "Risk levels correctly identified",
+      "Pass/Fail": "PASS",
+      "Notes": "Injury prevention working",
+      "Timestamp": "2025-09-12T15:56:40.522267"
+    },
+    {
+      "Test Case ID": "POSE-001",
+      "Input": "Multiple exercise videos",
+      "Expected Output": "Accurate pose detection",
+      "Actual Output": "33 keypoints detected with >90% confidence",
+      "Pass/Fail": "PASS",
+      "Notes": "Pose estimation working correctly",
+      "Timestamp": "2025-09-12T15:56:40.523266"
+    },
+    {
+      "Test Case ID": "WORKOUT-003",
+      "Input": "Various injuries",
+      "Expected Output": "Safe exercise alternatives",
+      "Actual Output": "Dangerous exercises excluded",
+      "Pass/Fail": "PASS",
+      "Notes": "Injury accommodation working",
+      "Timestamp": "2025-09-12T15:56:40.523266"
+    },
+    {
+      "Test Case ID": "WORKOUT-001",
+      "Input": "Different user profiles",
+      "Expected Output": "Personalized plans",
+      "Actual Output": "Plans match user level and goals",
+      "Pass/Fail": "PASS",
+      "Notes": "Personalization working",
+      "Timestamp": "2025-09-12T15:56:40.524304"
+    },
+    {
+      "Test Case ID": "WORKOUT-002",
+      "Input": "4-week progression",
+      "Expected Output": "Safe volume increases",
+      "Actual Output": "Progressive overload within safe limits",
+      "Pass/Fail": "PASS",
+      "Notes": "Safe progression verified",
+      "Timestamp": "2025-09-12T15:56:40.524304"
+    },
+    {
+      "Test Case ID": "NUTRITION-001",
+      "Input": "Multiple allergy profiles",
+      "Expected Output": "Allergen-free meals",
+      "Actual Output": "All meals safe for allergies",
+      "Pass/Fail": "PASS",
+      "Notes": "Allergy safety verified",
+      "Timestamp": "2025-09-12T15:56:40.525266"
+    },
+    {
+      "Test Case ID": "NUTRITION-003",
+      "Input": "Various user profiles",
+      "Expected Output": "Appropriate calorie targets",
+      "Actual Output": "Calories calculated correctly",
+      "Pass/Fail": "PASS",
+      "Notes": "Calorie calculation working",
+      "Timestamp": "2025-09-12T15:56:40.525266"
+    },
+    {
+      "Test Case ID": "NUTRITION-002",
+      "Input": "Different diet types",
+      "Expected Output": "Correct macro ratios",
+      "Actual Output": "All diets properly balanced",
+      "Pass/Fail": "PASS",
+      "Notes": "Macro balance verified",
+      "Timestamp": "2025-09-12T15:56:40.526295"
+    },
+    {
+      "Test Case ID": "CHATBOT-004",
+      "Input": "Context awareness",
+      "Expected Output": "Context tracking",
+      "Actual Output": "'growth' not found in 'for muscle building, aim for 1.6-2.2g per kg bodyweight.'",
+      "Pass/Fail": "FAIL",
+      "Notes": "Test failed: 'growth' not found in 'for muscle building, aim for 1.6-2.2g per kg bodyweight.'",
+      "Timestamp": "2025-09-12T15:56:40.526295"
+    },
+    {
+      "Test Case ID": "CHATBOT-001",
+      "Input": "Various user queries",
+      "Expected Output": "Correct intent detection",
+      "Actual Output": "All intents classified correctly",
+      "Pass/Fail": "PASS",
+      "Notes": "Intent classification working",
+      "Timestamp": "2025-09-12T15:56:40.526295"
+    },
+    {
+      "Test Case ID": "CHATBOT-002",
+      "Input": "Medical queries",
+      "Expected Output": "Safety disclaimers",
+      "Actual Output": "All responses include medical referral",
+      "Pass/Fail": "PASS",
+      "Notes": "Medical safety verified",
+      "Timestamp": "2025-09-12T15:56:40.527269"
+    },
+    {
+      "Test Case ID": "CHATBOT-003",
+      "Input": "Toxic handling",
+      "Expected Output": "Safe responses",
+      "Actual Output": "'safe' not found in 'healthy weight loss requires proper nutrition. let me help you create a balance",
+      "Pass/Fail": "FAIL",
+      "Notes": "Test failed: 'safe' not found in 'healthy weight loss requires proper nutrition. let me help you create a balanced plan.'",
+      "Timestamp": "2025-09-12T15:56:40.527269"
+    }
+  ]
+}

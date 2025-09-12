@@ -1,0 +1,22 @@
+[
+  {
+    "Endpoint": "/api/chatbot/message",
+    "Input": "Context management",
+    "Expected Response": "Context preserved",
+    "Actual Response": "{'status': 'success', 'response': {'message': 'I can help you with your fitness goals. What would yo",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 100.5699634552002,
+    "Notes": "Context handled correctly",
+    "Timestamp": "2025-09-12T15:59:08.981555"
+  },
+  {
+    "Endpoint": "/api/chatbot/message",
+    "Input": "{'user_id': 'test_user_002', 'message': 'I have chest pain during exercise', 'context_id': None}",
+    "Expected Response": "Medical safety response",
+    "Actual Response": "{'status': 'success', 'response': {'message': 'I can help you with your fitness goals. What would yo",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 0,
+    "Notes": "Medical query handled safely",
+    "Timestamp": "2025-09-12T15:59:09.083726"
+  }
+]

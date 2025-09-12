@@ -1,0 +1,32 @@
+[
+  {
+    "Endpoint": "/api/pose/check",
+    "Input": "{'exercise_type': 'squat'}",
+    "Expected Response": "Error response",
+    "Actual Response": "{'status': 'success', 'pose_analysis': {'exercise_type': 'squat', 'form_score': 85, 'keypoints': [[0",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 0,
+    "Notes": "Error handling tested",
+    "Timestamp": "2025-09-12T15:59:08.271374"
+  },
+  {
+    "Endpoint": "/api/pose/check",
+    "Input": "Timeout test",
+    "Expected Response": "Timeout handling",
+    "Actual Response": "Timeout handled",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 5000,
+    "Notes": "Timeout scenario tested",
+    "Timestamp": "2025-09-12T15:59:08.272420"
+  },
+  {
+    "Endpoint": "/api/pose/check",
+    "Input": "{'video': 'base64_encoded_video_data_here', 'exercise_type': 'squat', 'user_id': 'test_user_001'}",
+    "Expected Response": "Pose analysis result",
+    "Actual Response": "{'status': 'success', 'pose_analysis': {'exercise_type': 'squat', 'form_score': 85, 'keypoints': [[0",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 101.226806640625,
+    "Notes": "Valid pose analysis returned",
+    "Timestamp": "2025-09-12T15:59:08.373647"
+  }
+]

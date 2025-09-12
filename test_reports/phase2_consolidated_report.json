@@ -1,0 +1,203 @@
+{
+  "phase": "Phase 2 - Backend AI Integration Testing",
+  "timestamp": "2025-09-12T15:59:09.613078",
+  "summary": {
+    "total_tests": 19,
+    "passed": 13,
+    "failed": 6,
+    "average_latency_ms": 316.79302642219943,
+    "success_rate": "68.42%"
+  },
+  "detailed_results": [
+    {
+      "Endpoint": "/api/pose/check",
+      "Input": "{'exercise_type': 'squat'}",
+      "Expected Response": "Error response",
+      "Actual Response": "{'status': 'success', 'pose_analysis': {'exercise_type': 'squat', 'form_score': 85, 'keypoints': [[0",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 0,
+      "Notes": "Error handling tested",
+      "Timestamp": "2025-09-12T15:59:08.271374"
+    },
+    {
+      "Endpoint": "/api/pose/check",
+      "Input": "Timeout test",
+      "Expected Response": "Timeout handling",
+      "Actual Response": "Timeout handled",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 5000,
+      "Notes": "Timeout scenario tested",
+      "Timestamp": "2025-09-12T15:59:08.272420"
+    },
+    {
+      "Endpoint": "/api/pose/check",
+      "Input": "{'video': 'base64_encoded_video_data_here', 'exercise_type': 'squat', 'user_id': 'test_user_001'}",
+      "Expected Response": "Pose analysis result",
+      "Actual Response": "{'status': 'success', 'pose_analysis': {'exercise_type': 'squat', 'form_score': 85, 'keypoints': [[0",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 101.226806640625,
+      "Notes": "Valid pose analysis returned",
+      "Timestamp": "2025-09-12T15:59:08.373647"
+    },
+    {
+      "Endpoint": "/api/workouts/recommend",
+      "Input": "{'user_id': 'test_user_001', 'fitness_level': 'intermediate', 'goals': ['muscle_gain', 'strength'], ",
+      "Expected Response": "Personalized workout plan",
+      "Actual Response": "{'status': 'success', 'workout_plan': {'exercises': [{'name': 'Squats', 'sets': 3, 'reps': 12, 'rest",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 100.54159164428711,
+      "Notes": "Personalized plan generated",
+      "Timestamp": "2025-09-12T15:59:08.476198"
+    },
+    {
+      "Endpoint": "/api/workouts/recommend",
+      "Input": "{'user_id': 'test_user_002', 'fitness_level': 'beginner', 'goals': ['weight_loss'], 'injuries': ['kn",
+      "Expected Response": "Injury-safe workout",
+      "Actual Response": "{'status': 'success', 'workout_plan': {'exercises': [{'name': 'Squats', 'sets': 3, 'reps': 12, 'rest",
+      "Pass/Fail": "FAIL",
+      "Latency (ms)": 101.13930702209473,
+      "Notes": "Unsafe exercises included",
+      "Timestamp": "2025-09-12T15:59:08.577337"
+    },
+    {
+      "Endpoint": "/api/nutrition/plan",
+      "Input": "{'user_id': 'test_user_002', 'diet_type': 'keto', 'calorie_target': 1800}",
+      "Expected Response": "Balanced macros",
+      "Actual Response": "{'status': 'success', 'nutrition_plan': {'daily_calories': 2000, 'macros': {'protein': 150, 'carbs':",
+      "Pass/Fail": "FAIL",
+      "Latency (ms)": 101.11188888549805,
+      "Notes": "Macro calories: 2030",
+      "Timestamp": "2025-09-12T15:59:08.678449"
+    },
+    {
+      "Endpoint": "/api/nutrition/plan",
+      "Input": "{'user_id': 'test_user_001', 'allergies': ['nuts', 'dairy'], 'dietary_restrictions': ['vegetarian'],",
+      "Expected Response": "Allergy-safe nutrition plan",
+      "Actual Response": "{'status': 'success', 'nutrition_plan': {'daily_calories': 2000, 'macros': {'protein': 150, 'carbs':",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 101.29809379577637,
+      "Notes": "Allergies respected in plan",
+      "Timestamp": "2025-09-12T15:59:08.779747"
+    },
+    {
+      "Endpoint": "/api/chatbot/message",
+      "Input": "Context management",
+      "Expected Response": "Context preserved",
+      "Actual Response": "{'status': 'success', 'response': {'message': 'I can help you with your fitness goals. What would yo",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 100.5699634552002,
+      "Notes": "Context handled correctly",
+      "Timestamp": "2025-09-12T15:59:08.981555"
+    },
+    {
+      "Endpoint": "/api/chatbot/message",
+      "Input": "{'user_id': 'test_user_002', 'message': 'I have chest pain during exercise', 'context_id': None}",
+      "Expected Response": "Medical safety response",
+      "Actual Response": "{'status': 'success', 'response': {'message': 'I can help you with your fitness goals. What would yo",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 0,
+      "Notes": "Medical query handled safely",
+      "Timestamp": "2025-09-12T15:59:09.083726"
+    },
+    {
+      "Endpoint": "/api/pose/check",
+      "Input": "Malformed JSON",
+      "Expected Response": "Error handling",
+      "Actual Response": "'NoneType' object has no attribute 'get'",
+      "Pass/Fail": "FAIL",
+      "Latency (ms)": 0,
+      "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+      "Timestamp": "2025-09-12T15:59:09.084954"
+    },
+    {
+      "Endpoint": "/api/workouts/recommend",
+      "Input": "Malformed JSON",
+      "Expected Response": "Error handling",
+      "Actual Response": "'NoneType' object has no attribute 'get'",
+      "Pass/Fail": "FAIL",
+      "Latency (ms)": 0,
+      "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+      "Timestamp": "2025-09-12T15:59:09.084954"
+    },
+    {
+      "Endpoint": "/api/nutrition/plan",
+      "Input": "Malformed JSON",
+      "Expected Response": "Error handling",
+      "Actual Response": "'NoneType' object has no attribute 'get'",
+      "Pass/Fail": "FAIL",
+      "Latency (ms)": 0,
+      "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+      "Timestamp": "2025-09-12T15:59:09.084954"
+    },
+    {
+      "Endpoint": "/api/chatbot/message",
+      "Input": "Malformed JSON",
+      "Expected Response": "Error handling",
+      "Actual Response": "'NoneType' object has no attribute 'get'",
+      "Pass/Fail": "FAIL",
+      "Latency (ms)": 0,
+      "Notes": "Test failed: 'NoneType' object has no attribute 'get'",
+      "Timestamp": "2025-09-12T15:59:09.084954"
+    },
+    {
+      "Endpoint": "/api/pose/check",
+      "Input": "Service unavailable",
+      "Expected Response": "Graceful degradation",
+      "Actual Response": "Service unavailability handled",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 0,
+      "Notes": "Service failure handled",
+      "Timestamp": "2025-09-12T15:59:09.086303"
+    },
+    {
+      "Endpoint": "/api/workouts/recommend",
+      "Input": "10 concurrent requests",
+      "Expected Response": "All requests handled",
+      "Actual Response": "Avg time: 10.86ms",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 10.855889320373535,
+      "Notes": "Handled 10 concurrent requests",
+      "Timestamp": "2025-09-12T15:59:09.195720"
+    },
+    {
+      "Endpoint": "/api/pose/check",
+      "Input": "SLA: 500ms",
+      "Expected Response": "Response within 500ms",
+      "Actual Response": "Actual: 100.64ms",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 100.64387321472168,
+      "Notes": "SLA met",
+      "Timestamp": "2025-09-12T15:59:09.297372"
+    },
+    {
+      "Endpoint": "/api/workouts/recommend",
+      "Input": "SLA: 300ms",
+      "Expected Response": "Response within 300ms",
+      "Actual Response": "Actual: 100.61ms",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 100.61287879943848,
+      "Notes": "SLA met",
+      "Timestamp": "2025-09-12T15:59:09.397985"
+    },
+    {
+      "Endpoint": "/api/nutrition/plan",
+      "Input": "SLA: 300ms",
+      "Expected Response": "Response within 300ms",
+      "Actual Response": "Actual: 100.56ms",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 100.55994987487793,
+      "Notes": "SLA met",
+      "Timestamp": "2025-09-12T15:59:09.498545"
+    },
+    {
+      "Endpoint": "/api/chatbot/message",
+      "Input": "SLA: 200ms",
+      "Expected Response": "Response within 200ms",
+      "Actual Response": "Actual: 100.51ms",
+      "Pass/Fail": "PASS",
+      "Latency (ms)": 100.50725936889648,
+      "Notes": "SLA met",
+      "Timestamp": "2025-09-12T15:59:09.599052"
+    }
+  ]
+}

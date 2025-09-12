@@ -1,0 +1,22 @@
+[
+  {
+    "Endpoint": "/api/nutrition/plan",
+    "Input": "{'user_id': 'test_user_002', 'diet_type': 'keto', 'calorie_target': 1800}",
+    "Expected Response": "Balanced macros",
+    "Actual Response": "{'status': 'success', 'nutrition_plan': {'daily_calories': 2000, 'macros': {'protein': 150, 'carbs':",
+    "Pass/Fail": "FAIL",
+    "Latency (ms)": 101.11188888549805,
+    "Notes": "Macro calories: 2030",
+    "Timestamp": "2025-09-12T15:59:08.678449"
+  },
+  {
+    "Endpoint": "/api/nutrition/plan",
+    "Input": "{'user_id': 'test_user_001', 'allergies': ['nuts', 'dairy'], 'dietary_restrictions': ['vegetarian'],",
+    "Expected Response": "Allergy-safe nutrition plan",
+    "Actual Response": "{'status': 'success', 'nutrition_plan': {'daily_calories': 2000, 'macros': {'protein': 150, 'carbs':",
+    "Pass/Fail": "PASS",
+    "Latency (ms)": 101.29809379577637,
+    "Notes": "Allergies respected in plan",
+    "Timestamp": "2025-09-12T15:59:08.779747"
+  }
+]

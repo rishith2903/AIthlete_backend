@@ -1,0 +1,56 @@
+[
+  {
+    "Test Case ID": "POSE-004",
+    "Input": "Squat pose analysis",
+    "Expected Output": "Biomechanical metrics",
+    "Actual Output": "Risk: 0.00, Stability: 0.29",
+    "Pass/Fail": "PASS",
+    "Notes": "Metrics calculated correctly",
+    "Timestamp": "2025-09-12T18:38:36.639553"
+  },
+  {
+    "Test Case ID": "POSE-005",
+    "Input": "Invalid input dimensions",
+    "Expected Output": "Exception raised",
+    "Actual Output": "Exception raised",
+    "Pass/Fail": "PASS",
+    "Notes": "Properly handles invalid input",
+    "Timestamp": "2025-09-12T18:38:36.708697"
+  },
+  {
+    "Test Case ID": "POSE-006",
+    "Input": "Exercise classification",
+    "Expected Output": "Classification",
+    "Actual Output": "expected Tensor as element 0 in argument 0, but got MagicMock",
+    "Pass/Fail": "FAIL",
+    "Notes": "Classification failed: expected Tensor as element 0 in argument 0, but got MagicMock",
+    "Timestamp": "2025-09-12T18:38:36.789398"
+  },
+  {
+    "Test Case ID": "POSE-002",
+    "Input": "Single frame input",
+    "Expected Output": "3D pose estimation",
+    "Actual Output": "expected Tensor as element 0 in argument 0, but got MagicMock",
+    "Pass/Fail": "FAIL",
+    "Notes": "Inference failed: expected Tensor as element 0 in argument 0, but got MagicMock",
+    "Timestamp": "2025-09-12T18:38:36.859423"
+  },
+  {
+    "Test Case ID": "POSE-003",
+    "Input": "Video sequence",
+    "Expected Output": "Temporal pose estimation",
+    "Actual Output": "expected Tensor as element 0 in argument 0, but got MagicMock",
+    "Pass/Fail": "FAIL",
+    "Notes": "Video processing failed: expected Tensor as element 0 in argument 0, but got MagicMock",
+    "Timestamp": "2025-09-12T18:38:36.932977"
+  },
+  {
+    "Test Case ID": "POSE-001",
+    "Input": "Model initialization",
+    "Expected Output": "Model initialized",
+    "Actual Output": "Model initialized successfully",
+    "Pass/Fail": "PASS",
+    "Notes": "All layers loaded",
+    "Timestamp": "2025-09-12T18:38:37.000329"
+  }
+]

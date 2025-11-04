@@ -21,7 +21,6 @@ tokenizers==0.15.0
 # Computer Vision for Food Recognition
 opencv-python==4.8.1.78
 Pillow==10.1.0
-torchvision==0.16.1
 timm==0.9.12
 
 # Graph Neural Networks for Food Knowledge Graph
@@ -31,10 +30,10 @@ dgl==1.1.3
 
 # Advanced NLP
 openai==1.3.7
-anthropix==0.7.8
+anthropic==0.7.8
 langchain==0.0.350
 langchain-community==0.0.13
-chroma-db==0.4.18
+chromadb==0.4.18
 
 # Data Processing & Traditional ML
 pandas==2.1.3

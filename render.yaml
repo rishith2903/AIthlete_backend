@@ -16,10 +16,13 @@ services:
       - key: REDIS_HOST
         fromService:
           name: fitness-redis
-          type: pserv
+          type: redis
           property: host
       - key: REDIS_PORT
-        value: 6379
+        fromService:
+          name: fitness-redis
+          type: redis
+          property: port
       - key: JWT_SECRET
         generateValue: true
       - key: WORKOUT_SERVICE_URL
@@ -35,12 +38,12 @@ services:
     healthCheckPath: /actuator/health
     autoDeploy: true
 
+  - type: redis
+    name: fitness-redis
+    plan: free
+
 databases:
   - name: fitness-mongodb
     databaseName: fitness_db
     user: fitness_user
-    plan: free
-
-  - name: fitness-redis
-    type: redis
     plan: free

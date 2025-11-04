@@ -5,11 +5,17 @@ services:
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
     envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
       - key: SPRING_PROFILE
         value: production
       - key: PORT
         value: 8080
       - key: MONGODB_URI
+        fromDatabase:
+          name: fitness-mongodb
+          property: connectionString
+      - key: SPRING_DATA_MONGODB_URI
         fromDatabase:
           name: fitness-mongodb
           property: connectionString
@@ -23,6 +29,11 @@ services:
           name: fitness-redis
           type: redis
           property: port
+      - key: REDIS_PASSWORD
+        fromService:
+          name: fitness-redis
+          type: redis
+          property: password
       - key: JWT_SECRET
         generateValue: true
       - key: WORKOUT_SERVICE_URL

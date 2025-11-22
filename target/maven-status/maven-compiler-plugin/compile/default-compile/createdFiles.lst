@@ -8,6 +8,7 @@ com\aifitness\backend\entity\Progress.class
 com\aifitness\backend\entity\ChatbotHistory$ChatbotHistoryBuilder.class
 com\aifitness\backend\entity\ChatbotHistory$Message$MessageBuilder.class
 com\aifitness\backend\security\CustomUserDetailsService.class
+com\aifitness\backend\config\ProductionConfigurationValidator.class
 com\aifitness\backend\service\WorkoutService.class
 com\aifitness\backend\controller\ChatbotController.class
 com\aifitness\backend\service\AiModelService.class
@@ -22,7 +23,6 @@ com\aifitness\backend\controller\ChatbotController$ChatResponse.class
 com\aifitness\backend\exception\ResourceNotFoundException.class
 com\aifitness\backend\entity\Meal$FoodItem$FoodItemBuilder.class
 com\aifitness\backend\FitnessBackendApplication.class
-com\aifitness\backend\config\StartupValidator.class
 com\aifitness\backend\entity\Progress$ProgressBuilder.class
 com\aifitness\backend\controller\AuthController.class
 com\aifitness\backend\controller\WorkoutController.class

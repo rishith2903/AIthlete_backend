@@ -12,13 +12,9 @@ services:
       - key: PORT
         value: 8080
       - key: MONGODB_URI
-        fromDatabase:
-          name: fitness-mongodb
-          property: connectionString
+        value: mongodb+srv://rishithkumar2903_db_user:Rishith2005@cluster0.mnql7ri.mongodb.net/fitness_db?appName=Cluster0
       - key: SPRING_DATA_MONGODB_URI
-        fromDatabase:
-          name: fitness-mongodb
-          property: connectionString
+        value: mongodb+srv://rishithkumar2903_db_user:Rishith2005@cluster0.mnql7ri.mongodb.net/fitness_db?appName=Cluster0
       - key: REDIS_HOST
         fromService:
           name: fitness-redis
@@ -51,10 +47,4 @@ services:
 
   - type: redis
     name: fitness-redis
-    plan: free
-
-databases:
-  - name: fitness-mongodb
-    databaseName: fitness_db
-    user: fitness_user
     plan: free

@@ -22,6 +22,7 @@ com\aifitness\backend\controller\ChatbotController$ChatResponse.class
 com\aifitness\backend\exception\ResourceNotFoundException.class
 com\aifitness\backend\entity\Meal$FoodItem$FoodItemBuilder.class
 com\aifitness\backend\FitnessBackendApplication.class
+com\aifitness\backend\config\StartupValidator.class
 com\aifitness\backend\entity\Progress$ProgressBuilder.class
 com\aifitness\backend\controller\AuthController.class
 com\aifitness\backend\controller\WorkoutController.class
